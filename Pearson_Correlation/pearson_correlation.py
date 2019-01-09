@@ -4,8 +4,6 @@
 import numpy as np
 from numpy.linalg import *
 import matplotlib.pyplot as plt
-import matplotlib.cm as cm
-#from matplotlib.ticker import MultipleLocator
 
 def pearson_correlation(trajectory_data):
         """ Calculates the Pearson Correlation Matrix for node pairs
