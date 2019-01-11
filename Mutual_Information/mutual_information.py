@@ -67,7 +67,9 @@ def mutual_information(trajectory_data,bins):
         # ----------------------------------------
         # PLOTTING NODE DISPLACEMENT
         # ----------------------------------------
-        plt.plot(nSteps_range,node_displacement)
+        for i in nNodes_range:
+                plt.plot(nSteps_range,node_displacement[:,i],label='Particle %d'%(i))
+        plt.legend()
         plt.xlabel('Timestep',size=14)
         plt.ylabel(r'Displacement Away From Average Positions ($\AA)',size=14)
         plt.tight_layout()
